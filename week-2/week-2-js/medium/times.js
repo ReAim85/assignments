@@ -9,14 +9,17 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
+    let start = performance.now();
     let first = 0;
-    let start = Date.now();
+
     for (let i = 1; i <= n; i++) {
         first += i;
     }
-    let end = (Date.now()-start)/1000;
-    console.log(end);
-    // return 0.01;
+    
+    let end = (performance.now()-start)/1000;
+    return end;
 }
 
-calculateTime()
+console.log("Time taken for the sum of 1-100 is: " + calculateTime(100));
+console.log("Time taken for the sum of 1-100000 is: " + calculateTime(100000));
+console.log("Time taken for the sum of 1-1000000000 is: " + calculateTime(1000000000));
