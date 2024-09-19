@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div style="display: flex; justify-content: center;">
+        <div id="container" style="display: flex; justify-content: space-evenly; background-color: white;">
+            
+                <button onclick='color("red")' id="red" style="color: white; background-color: rgb(198, 18, 18);">Red</button>
+            
+                <button onclick='color("green")' id="green" style="color: white; background-color: green;">Green</button>
+            
+                <button onclick='color("rgb(43, 135, 215)")' id="blue" style="color: white; background-color: rgb(43, 135, 215);">Blue</button>
+            
+                <button onclick='color("black")' id="black" style="color: white; background-color: black;">Black</button>
+            
+                <button onclick='color("white")' id="default" style="border: 1px solid black; color: black; background-color: white;">Default</button>
+
+                <button onclick='customColor()' id="customColor" style="color: black; background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red)">Custom Color</button>
+            
+        </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
